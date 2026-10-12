@@ -6,6 +6,8 @@
 给 Agent（Claude Code / Codex / pi / Cursor 等）用的 [SKILL.md](./SKILL.md)，也是给人用的 CLI。
 底层是第三方 PyPI 包 [`wechat-clawbot-sdk`](https://pypi.org/project/wechat-clawbot-sdk/)，直连微信 ClawBot 网关，只需要「发消息」，**不需要常驻 agent、不需要企业微信、不需要公网服务器**。
 
+![微信里 ClawBot 会话的真实截图：bot 的 echo 回复、clawbot send 推的「【测试】ClawBot 单向通知已打通」文本、以及 clawbot image 推的配图](./assets/wechat-clawbot-notify.png)
+
 ## 为什么是这个而不是官方 ClawBot plugin
 
 官方的 OpenClaw / ClawBot plugin 做的是**双向聊天**（微信 ↔ 你的 agent，bot 要常驻接消息、回消息）。
